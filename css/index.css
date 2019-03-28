@@ -208,6 +208,7 @@ nav .links a:hover {
 .main .banner {
   background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('../img/banner.gif');
   background-size: cover;
+  background-position: -220px 0;
   height: 400px;
 }
 .main .banner .banner-text {
@@ -229,4 +230,66 @@ nav .links a:hover {
   transition: all 0.3s linear;
   transform: translateY(-2px);
   box-shadow: 0 0 2px 0 rgba(46, 62, 72, 0.52), 0 2px 4px 0 rgba(46, 62, 72, 0.52);
+}
+.main .popular {
+  margin: 50px auto;
+}
+.main .carousel {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.main .carousel .card {
+  border: 2px solid black;
+  border-radius: 6px;
+  width: 30%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+.main .carousel .card:hover {
+  transition: all 0.3s linear;
+  transform: translateY(-2px);
+  box-shadow: 0 0 2px 0 rgba(46, 62, 72, 0.52), 0 2px 4px 0 rgba(46, 62, 72, 0.52);
+  cursor: pointer;
+}
+.main .carousel .card .top {
+  flex: 0 0 50%;
+  background-image: url('https://source.unsplash.com/1600x900/?fitness');
+  background-size: cover;
+}
+.main .carousel .card .bottom {
+  padding: 5px;
+}
+.main .howitworks {
+  background: black;
+  color: white;
+  margin: 70px auto;
+  height: 400px;
+}
+.main .howitworks .cards {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .howitworks .cards .card {
+  display: flex;
+}
+.main .howitworks .cards .card i {
+  font-size: 3rem;
+  margin: 0 10px;
+  color: deepskyblue;
+}
+.main .howitworks .cards .card a {
+  text-decoration: none;
+  color: deepskyblue;
+  font-size: 2rem;
+}
+.main .howitworks .cards .card a:hover {
+  text-shadow: 1px 1px rgba(175, 235, 255, 0.87);
 }

@@ -4,6 +4,7 @@
     .banner {
         background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('../img/banner.gif');
         background-size: cover;
+        background-position: -220px 0;
         height: 400px;
         .banner-text {
             text-align: center;
@@ -12,6 +13,74 @@
             color: white;
             button {
                 .button;
+            }
+        }
+    } //banner
+
+    .popular {
+        margin: 50px auto;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        .card {
+            border: 2px solid black;
+            border-radius: 6px;
+            width: 30%;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                .pop;
+                cursor: pointer;
+            }
+
+            .top {
+                flex: 0 0 50%;
+                background-image: url('https://source.unsplash.com/1600x900/?fitness');
+                background-size: cover;
+            }
+
+            .bottom {
+                padding: 5px;
+            }
+        }
+    } // carousel
+
+    .howitworks {
+        background: black;
+        color: white;
+        margin: 70px auto;
+        height: 400px;
+
+        .cards {
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .card {
+                display: flex;
+                i {
+                    font-size: 3rem;
+                    margin: 0 10px;
+                    color: deepskyblue;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: deepskyblue;
+                    font-size: 2rem;
+                    &:hover {
+                        text-shadow: 1px 1px rgba(175, 235, 255, 0.87);
+                    }
+                }
             }
         }
     }
