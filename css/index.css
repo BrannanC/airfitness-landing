@@ -246,6 +246,9 @@ nav .links a:hover {
   height: 100%;
   width: 100%;
 }
+.main .carousel .card .bottom {
+  padding: 5px;
+}
 .main .carousel .card .top {
   flex: 0 0 50%;
 }
@@ -264,8 +267,41 @@ nav .links a:hover {
 .main .carousel .five .top {
   background-image: url('https://source.unsplash.com/1600x900/?running');
 }
-.main .carousel .card .bottom {
-  padding: 5px;
+@media (max-width: 1022px) {
+  .main .carousel .card .bottom {
+    color: white;
+    padding-left: 6%;
+  }
+  .main .carousel .one {
+    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('https://source.unsplash.com/1600x900/?fitness');
+  }
+  .main .carousel .one .top {
+    background-image: none;
+  }
+  .main .carousel .two {
+    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('https://source.unsplash.com/1600x900/?yoga');
+  }
+  .main .carousel .two .top {
+    background-image: none;
+  }
+  .main .carousel .three {
+    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('https://source.unsplash.com/1600x900/?hiking');
+  }
+  .main .carousel .three .top {
+    background-image: none;
+  }
+  .main .carousel .four {
+    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('https://source.unsplash.com/1600x900/?beach');
+  }
+  .main .carousel .four .top {
+    background-image: none;
+  }
+  .main .carousel .five {
+    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('https://source.unsplash.com/1600x900/?running');
+  }
+  .main .carousel .five .top {
+    background-image: none;
+  }
 }
 .main .carousel .left-button {
   position: absolute;
@@ -282,9 +318,13 @@ nav .links a:hover {
 .main .carousel .left-button:hover {
   color: white;
   background: black;
-  transition: all 0.3s linear;
-  transform: translateY(-2px);
-  box-shadow: 0 0 2px 0 rgba(46, 62, 72, 0.52), 0 2px 4px 0 rgba(46, 62, 72, 0.52);
+}
+@media (min-width: 1022px) {
+  .main .carousel .left-button:hover {
+    transition: all 0.3s linear;
+    transform: translateY(-2px);
+    box-shadow: 0 0 2px 0 rgba(46, 62, 72, 0.52), 0 2px 4px 0 rgba(46, 62, 72, 0.52);
+  }
 }
 .main .carousel .right-button {
   position: absolute;
@@ -301,9 +341,37 @@ nav .links a:hover {
 .main .carousel .right-button:hover {
   color: white;
   background: black;
-  transition: all 0.3s linear;
-  transform: translateY(-2px);
-  box-shadow: 0 0 2px 0 rgba(46, 62, 72, 0.52), 0 2px 4px 0 rgba(46, 62, 72, 0.52);
+}
+@media (min-width: 1022px) {
+  .main .carousel .right-button:hover {
+    transition: all 0.3s linear;
+    transform: translateY(-2px);
+    box-shadow: 0 0 2px 0 rgba(46, 62, 72, 0.52), 0 2px 4px 0 rgba(46, 62, 72, 0.52);
+  }
+}
+@media (max-width: 1022px) {
+  .main .carousel .left-button {
+    left: 0;
+    height: 360px;
+    top: 0;
+    border-radius: 6px;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .carousel .right-button {
+    right: 0;
+    height: 360px;
+    top: 0;
+    border-radius: 6px;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .main .carousel .card {
   border: 2px solid black;
@@ -316,17 +384,23 @@ nav .links a:hover {
   color: black;
 }
 .main .carousel .card:hover {
-  transition: all 0.3s linear;
-  transform: translateY(-2px);
-  box-shadow: 0 0 2px 0 rgba(46, 62, 72, 0.52), 0 2px 4px 0 rgba(46, 62, 72, 0.52);
   cursor: pointer;
+}
+@media (min-width: 1022px) {
+  .main .carousel .card:hover {
+    transition: all 0.3s linear;
+    transform: translateY(-2px);
+    box-shadow: 0 0 2px 0 rgba(46, 62, 72, 0.52), 0 2px 4px 0 rgba(46, 62, 72, 0.52);
+  }
 }
 .main .carousel .card .top {
   flex: 0 0 50%;
   background-size: cover;
 }
-.main .carousel .card .bottom {
-  padding: 5px;
+@media (max-width: 1022px) {
+  .main .carousel .card {
+    width: 100%;
+  }
 }
 .main .howitworks {
   background: black;

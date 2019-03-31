@@ -32,6 +32,9 @@
             height: 100%;
             width: 100%;
         }
+        .card .bottom {
+            padding: 5px;
+          }
         .card .top {
             flex: 0 0 50%;
           }
@@ -50,9 +53,43 @@
           .five .top {
             background-image: url('https://source.unsplash.com/1600x900/?running');
           }
-          .card .bottom {
-            padding: 5px;
+          @media @tablet {
+              .card .bottom {
+                  color: white;
+                  padding-left: 6%;
+              }
+            .one{
+                background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)),url('https://source.unsplash.com/1600x900/?fitness');
+                .top {
+                    background-image: none;
+                }
+              }
+              .two{
+                background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)),url('https://source.unsplash.com/1600x900/?yoga');
+                .top {
+                    background-image: none;
+                }
+              }
+              .three{
+                background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)),url('https://source.unsplash.com/1600x900/?hiking');
+                .top {
+                    background-image: none;
+                }
+              }
+              .four{
+                background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)),url('https://source.unsplash.com/1600x900/?beach');
+                .top {
+                    background-image: none;
+                }
+              }
+              .five{
+                background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)),url('https://source.unsplash.com/1600x900/?running');
+                .top {
+                    background-image: none;
+                }
+              }
           }
+
           .left-button {
             position: absolute;
             top: 47%;
@@ -68,7 +105,7 @@
             &:hover {
                 color: white;
                 background: black;
-                .pop;
+                @media @desktop {.pop;}
             }
           }
           .right-button {
@@ -86,9 +123,34 @@
             &:hover {
                 color: white;
                 background: black;
-                .pop;
+                @media @desktop {.pop;}
             }
           }
+          @media @tablet {
+              .left-button {
+                  left: 0;
+                  height: 360px;
+                  top: 0;
+                  border-radius: 6px;
+                  margin: 20px 0;
+                  padding: 0;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+              .right-button {
+                right: 0;
+                height: 360px;
+                top: 0;
+                border-radius: 6px;
+                margin: 20px 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+          }
+
         .card {
             border: 2px solid black;
             border-radius: 6px;
@@ -100,7 +162,7 @@
             color: black;
 
             &:hover {
-                .pop;
+                @media @desktop {.pop;}
                 cursor: pointer;
             }
 
@@ -108,9 +170,8 @@
                 flex: 0 0 50%;
                 background-size: cover;
             }
-
-            .bottom {
-                padding: 5px;
+            @media @tablet{
+                width: 100%;
             }
         }
     } // carousel
