@@ -1,6 +1,5 @@
-.slide-left {
-  transition: transform 2000ms ease 1.5s;
-  transform: translateX(20%);
+.full-opacity {
+  opacity: 1;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -184,7 +183,7 @@ img {
   }
 }
 .slide-left {
-  animation: slide-left 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 2.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 nav {
   display: flex;
@@ -217,6 +216,10 @@ nav .links a {
 nav .links a:hover {
   text-decoration: underline;
 }
+.home {
+  opacity: 0;
+  transition: opacity 2000ms linear;
+}
 .main {
   margin: 0 auto;
 }
@@ -248,6 +251,9 @@ nav .links a:hover {
 }
 .main .popular {
   margin: 50px auto;
+}
+.main .popular .popular-text {
+  transform: translateX(200%);
 }
 .main .carousel {
   width: 100%;

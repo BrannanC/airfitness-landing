@@ -1,8 +1,10 @@
 const tablet = window.matchMedia( "(max-width: 1022px)" );
 
 const popularText = document.querySelector('.popular-text');
+const home = document.querySelector('.home');
 window.addEventListener('load', () => {
     popularText.classList.toggle('slide-left');
+    home.style.opacity = 1;
 })
 
 class Carousel {
