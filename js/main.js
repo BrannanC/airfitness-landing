@@ -1,5 +1,10 @@
 const tablet = window.matchMedia( "(max-width: 1022px)" );
 
+const popularText = document.querySelector('.popular-text');
+window.addEventListener('load', () => {
+    popularText.classList.toggle('slide-left');
+})
+
 class Carousel {
     constructor(carElement){
         this.element = carElement;

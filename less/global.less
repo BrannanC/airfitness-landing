@@ -48,3 +48,17 @@
       max-width: 900px;
       margin: 0 auto;
   }
+
+  @keyframes slide-left {
+    0% {
+      transform: translateX(400);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .slide-left {
+      animation: slide-left 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+

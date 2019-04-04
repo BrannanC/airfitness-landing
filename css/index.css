@@ -1,3 +1,7 @@
+.slide-left {
+  transition: transform 2000ms ease 1.5s;
+  transform: translateX(20%);
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -170,6 +174,17 @@ img {
 .container {
   max-width: 900px;
   margin: 0 auto;
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(400);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.slide-left {
+  animation: slide-left 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 nav {
   display: flex;
@@ -429,4 +444,12 @@ nav .links a:hover {
 }
 .main .howitworks .cards .card a:hover {
   text-shadow: 1px 1px rgba(175, 235, 255, 0.87);
+}
+footer {
+  width: 100%;
+  background: lightgrey;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 40px auto;
+  padding: 40px;
 }
