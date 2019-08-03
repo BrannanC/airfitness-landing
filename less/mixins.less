@@ -1,20 +1,21 @@
-.pop(){
-    transition: all .3s linear;
-    transform: translateY(-2px);
-    box-shadow: 0 0 2px 0 rgba(46,62,72,.52), 0 2px 4px 0 rgba(46,62,72,.52);
+.pop() {
+  transition: all 0.3s linear;
+  transform: translateY(-2px);
+  box-shadow: 0 0 2px 0 rgba(46, 62, 72, 0.52),
+    0 2px 4px 0 rgba(46, 62, 72, 0.52);
 }
 
-.button(){
-    text-decoration: none;
-    color: white;
-    background: rgba(0,0,0,0.4);
-    width: 20%;
-    border: 1px solid black;
-    padding: 7px;
-    font-size: 2rem;
-    &:hover {
-      .pop;
-    }
+.button() {
+  text-decoration: none;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  width: 20%;
+  border: 1px solid black;
+  padding: 7px;
+  font-size: 2rem;
+  &:hover {
+    .pop;
+  }
 }
 
 // @keyframes slide-left {
@@ -27,10 +28,9 @@
 // }
 
 // .slide-left {
-//   animation: slide-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) linear;
+//   animation: slide-left 2s linear;
 // }
 
 .full-opacity {
-  
   opacity: 1;
 }

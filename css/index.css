@@ -174,17 +174,6 @@ img {
   max-width: 900px;
   margin: 0 auto;
 }
-@keyframes slide-left {
-  0% {
-    transform: translateX(400);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
-.slide-left {
-  animation: slide-left 2.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
 nav {
   display: flex;
   justify-content: space-between;
@@ -200,6 +189,11 @@ nav .links {
   display: flex;
   justify-content: space-evenly;
   font-size: 2rem;
+}
+@media (max-width: 715px) {
+  nav .links {
+    width: 50%;
+  }
 }
 nav .links span {
   font-size: 5rem;
@@ -219,12 +213,13 @@ nav .links a:hover {
 .home {
   opacity: 0;
   transition: opacity 2000ms linear;
+  overflow-x: hidden;
 }
 .main {
   margin: 0 auto;
 }
 .main .banner {
-  background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('../img/banner.gif');
+  background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url("../img/banner.gif");
   background-size: cover;
   background-position: -220px 0;
   height: 400px;
@@ -252,7 +247,13 @@ nav .links a:hover {
 .main .popular {
   margin: 50px auto;
 }
+@media (max-width: 1022px) {
+  .main .popular {
+    max-width: 94vw;
+  }
+}
 .main .popular .popular-text {
+  transition: all 2s;
   transform: translateX(200%);
 }
 .main .carousel {
@@ -274,19 +275,19 @@ nav .links a:hover {
   flex: 0 0 50%;
 }
 .main .carousel .one .top {
-  background-image: url('https://source.unsplash.com/1600x900/?fitness');
+  background-image: url("https://source.unsplash.com/1600x900/?fitness");
 }
 .main .carousel .two .top {
-  background-image: url('https://source.unsplash.com/1600x900/?yoga');
+  background-image: url("https://source.unsplash.com/1600x900/?yoga");
 }
 .main .carousel .three .top {
-  background-image: url('https://source.unsplash.com/1600x900/?hiking');
+  background-image: url("https://source.unsplash.com/1600x900/?hiking");
 }
 .main .carousel .four .top {
-  background-image: url('https://source.unsplash.com/1600x900/?beach');
+  background-image: url("https://source.unsplash.com/1600x900/?beach");
 }
 .main .carousel .five .top {
-  background-image: url('https://source.unsplash.com/1600x900/?running');
+  background-image: url("https://source.unsplash.com/1600x900/?running");
 }
 @media (max-width: 1022px) {
   .main .carousel .card .bottom {
@@ -294,31 +295,31 @@ nav .links a:hover {
     padding-left: 6%;
   }
   .main .carousel .one {
-    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('https://source.unsplash.com/1600x900/?fitness');
+    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url("https://source.unsplash.com/1600x900/?fitness");
   }
   .main .carousel .one .top {
     background-image: none;
   }
   .main .carousel .two {
-    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('https://source.unsplash.com/1600x900/?yoga');
+    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url("https://source.unsplash.com/1600x900/?yoga");
   }
   .main .carousel .two .top {
     background-image: none;
   }
   .main .carousel .three {
-    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('https://source.unsplash.com/1600x900/?hiking');
+    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url("https://source.unsplash.com/1600x900/?hiking");
   }
   .main .carousel .three .top {
     background-image: none;
   }
   .main .carousel .four {
-    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('https://source.unsplash.com/1600x900/?beach');
+    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url("https://source.unsplash.com/1600x900/?beach");
   }
   .main .carousel .four .top {
     background-image: none;
   }
   .main .carousel .five {
-    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url('https://source.unsplash.com/1600x900/?running');
+    background-image: linear-gradient(rgba(36, 64, 104, 0.4), rgba(36, 64, 104, 0.4)), url("https://source.unsplash.com/1600x900/?running");
   }
   .main .carousel .five .top {
     background-image: none;
@@ -339,6 +340,7 @@ nav .links a:hover {
 .main .carousel .left-button:hover {
   color: white;
   background: black;
+  cursor: pointer;
 }
 @media (min-width: 1022px) {
   .main .carousel .left-button:hover {
@@ -349,6 +351,7 @@ nav .links a:hover {
 }
 .main .carousel .right-button {
   position: absolute;
+  cursor: pointer;
   top: 47%;
   right: -50px;
   padding: 10px;
