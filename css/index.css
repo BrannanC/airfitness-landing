@@ -248,6 +248,7 @@ nav .links a:hover {
   transition: all 0.3s linear;
   transform: translateY(-2px);
   box-shadow: 0 0 2px 0 rgba(46, 62, 72, 0.52), 0 2px 4px 0 rgba(46, 62, 72, 0.52);
+  cursor: pointer;
 }
 @media (max-width: 715px) {
   .main .banner .banner-text button {
