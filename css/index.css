@@ -181,6 +181,11 @@ nav {
   margin: 0 10px;
   height: 100px;
 }
+@media (max-width: 530px) {
+  nav {
+    flex-direction: column;
+  }
+}
 nav .logo {
   letter-spacing: 2px;
 }
@@ -243,6 +248,11 @@ nav .links a:hover {
   transition: all 0.3s linear;
   transform: translateY(-2px);
   box-shadow: 0 0 2px 0 rgba(46, 62, 72, 0.52), 0 2px 4px 0 rgba(46, 62, 72, 0.52);
+}
+@media (max-width: 715px) {
+  .main .banner .banner-text button {
+    width: 40%;
+  }
 }
 .main .popular {
   margin: 50px auto;
